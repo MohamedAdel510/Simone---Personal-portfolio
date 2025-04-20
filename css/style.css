@@ -1,0 +1,619 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    font-family: var(--main-font-family);
+}
+
+:root{
+    --main-color: #20C997;
+    --main-font-family: "Poppins",'Poppins-Regular', sans-serif;
+    --font-wihte-color: white;
+    --font-color:#6C757D;
+    --font-black-color:#212529;
+    --home-content-font-size: 24px;
+
+    --nav-menu-bg-color:rgba(2, 2, 2, .9);
+    --navbar-bg-color:rgba(0, 0, 0, .9);
+    --sec-bg-color-light:#f1f1f1;
+
+    --tittle-font-size: calc(1.5rem + 7vw);
+    --sub-tittle-font-size: 24px;
+    --tittle-font-color: rgba(222, 227, 228, .3);
+    --sections-padding-values: 50px 10px;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+
+@keyframes Typing{
+    0%   { content: "|"; }
+    1%   { content: " M|"; }
+    2%   { content: " Mo|"; }
+    3%   { content: " Moh|"; }
+    4%   { content: " Moha|"; }
+    5%   { content: " Moham|"; }
+    6%   { content: " Mohame|"; }
+    7%   { content: " Mohamed|"; }
+    8%   { content: " Mohamed |"; }
+    9%   { content: " Mohamed A|"; }
+    10%  { content: " Mohamed Ad|"; }
+    11%  { content: " Mohamed Ade|"; }
+    12%  { content: " Mohamed Adel|"; }
+    13%  { content: " Mohamed Adel |"; }
+  
+    /* Delete only "Mohamed Olivia" */
+    14%  { content: " Mohamed Adel|"; }
+    15%  { content: " Mohamed Ade|"; }
+    16%  { content: " Mohamed Ad|"; }
+    17%  { content: " Mohamed A|"; }
+    18%  { content: " Mohamed |"; }
+    19%  { content: " Mohamed|"; }
+    20%  { content: " Mohame|"; }
+    21%  { content: " Moham|"; }
+    22%  { content: " Moha|"; }
+    23%  { content: " Moh|"; }
+    24%  { content: " Mo|"; }
+    25%  { content: " M|"; }
+    26%  { content: "|"; }
+    /* Phrase 2: " Freelancer.|" */
+    27%  { content: " a|"; }
+    28%  { content: " a F|"; }
+    29%  { content: " a Fr|"; }
+    30%  { content: " a  Fre|"; }
+    31%  { content: " a  Free|"; }
+    32%  { content: " a  Freel|"; }
+    33%  { content: " a  Freela|"; }
+    34%  { content: " a  Freelan|"; }
+    35%  { content: " a  Freelanc|"; }
+    36%  { content: " a  Freelance|"; }
+    37%  { content: " a  Freelancer|"; }
+    38%  { content: " a  Freelancer.|"; }
+    39%  { content: " a  Freelancer.|"; }
+  
+    /* Delete only "Freelancer." */
+    40%  { content: " a Freelancer.|"; }
+    41%  { content: " a Freelance|"; }
+    42%  { content: " a Freelanc|"; }
+    43%  { content: " a Freelan|"; }
+    44%  { content: " a Freela|"; }
+    45%  { content: " a Freel|"; }
+    46%  { content: " a Free|"; }
+    47%  { content: " a Fre|"; }
+    48%  { content: " a Fr|"; }
+    49%  { content: " a F|"; }
+    50%  { content: " a |"; }
+  
+    /* Phrase 3: " Photographer.|" */
+    51%  { content: " a P|"; }
+    52%  { content: " a Ph|"; }
+    53%  { content: " a Pho|"; }
+    54%  { content: " a Phot|"; }
+    55%  { content: " a Photo|"; }
+    56%  { content: " a Photog|"; }
+    57%  { content: " a Photogr|"; }
+    58%  { content: " a Photogra|"; }
+    59%  { content: " a Photograph|"; }
+    60%  { content: " a Photographe|"; }
+    61%  { content: " a Photographer|"; }
+    62%  { content: " a Photographer|"; }
+    63%  { content: " a Photographer.|"; }
+  
+    /* Delete only "Photographer" */
+    64%  { content: " a Photographer|"; }
+    65%  { content: " a Photographe|"; }
+    66%  { content: " a Photograph|"; }
+    67%  { content: " a Photogra|"; }
+    68%  { content: " a Photogr|"; }
+    69%  { content: " a Photog|"; }
+    70%  { content: " a Photo|"; }
+    71%  { content: " a Phot|"; }
+    72%  { content: " a Pho|"; }
+    73%  { content: " a Ph|"; }
+    74%  { content: " a P|"; }
+    75%  { content: " a |"; }
+  
+    /* Phrase 4: " Designer.|" */
+    76%  { content: " a D|"; }
+    77%  { content: " a De|"; }
+    78%  { content: " a Des|"; }
+    79%  { content: " a Desi|"; }
+    80%  { content: " a Desig|"; }
+    81%  { content: " a Design|"; }
+    82%  { content: " a Designe|"; }
+    83%  { content: " a Designer|"; }
+    84%  { content: " a Designer.|"; }
+    85%  { content: " a Designer.|"; }
+   
+    /* Delete "Designer.|" */
+    86%  { content: " a Designer.|"; }
+    87%  { content: " a Designer|"; }
+    88%  { content: " a Designe|"; }
+    89%  { content: " a Design|"; }
+    90%  { content: " a Desig|"; }
+    91%  { content: " a Desi|"; }
+    92%  { content: " a Des|"; }
+    93%  { content: " a De|"; }
+    94%  { content: " a D|"; }
+    95%  { content: " a |"; }
+  
+    /* Restart loop */
+    100% { content: "|"; }
+
+}
+
+
+@keyframes chevron-down-moves {
+     from{
+        transform: translateY(0);
+        opacity: 0;
+     }
+     to{
+        transform: translateY(40px);
+        opacity: 1;
+     }
+}
+
+#home-sec{
+    height: 100vh;
+    background-color: rgba(0 , 0, 0, .7);
+    background-image: url(../images/intro-bg.jpg);
+    background-size: cover;
+    background-position: center 0px;
+    background-attachment: fixed;
+
+    position: relative;
+
+
+}
+
+.home-layer{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content{
+    width: 100%;
+    /* background-color: blueviolet; */
+    text-align: center;
+    font-family: var(--main-font-family);
+    font-size: var(--home-content-font-size);
+
+    color: var(--font-wihte-color);
+    
+}
+
+.home-content > *{
+    margin: 15px 0px;
+}
+
+.home-content > h2::after{
+    content: "";
+    
+    animation: Typing 16s infinite;
+}
+
+.home-content > button{
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: transparent;
+    border: var(--main-color) solid 3px;
+    transition: background-color .5s;
+}
+.home-content > button a{
+    text-decoration: none;
+    color: var(--main-color);
+    transition: color .5s;
+}
+
+.home-content > button:hover{
+    background-color: var(--main-color);
+}
+
+.home-content > button:hover a{
+    color: var(--font-wihte-color);
+}
+
+.home-layer > a[href="#about-sec"]{
+    /* background-color: blueviolet; */
+    position: absolute;
+    bottom: 50px;
+    color: var(--font-wihte-color);
+    font-size: var(--home-content-font-size);
+    animation: chevron-down-moves 2s infinite;
+}
+
+.sitting{
+    color: var(--font-wihte-color);
+    font-size: var(--home-content-font-size);
+    background-color: #555555;
+    padding: 10px;
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px ;
+
+    position: fixed;
+    z-index: 99999999;
+    right: 0;
+    top: 35%;
+}
+
+
+.navbar{
+    background-color: var(--navbar-bg-color);
+    position: fixed;
+    width: 100%;
+    z-index: 999999999;
+
+    
+}
+
+.nav-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+.logo h2{
+    /* background-color: blueviolet; */
+    font-family: var(--main-font-family);
+    font-size: var(--home-content-font-size);
+    padding: 10px;
+    color: white;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+/* *** Nav-menu for small screen ** */
+
+.nav-menu{
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: var(--nav-menu-bg-color);
+    transition: height .5s;
+}
+
+.nav-menu ul{
+    list-style: none;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    font-family: var(--main-font-family);
+    color: white;
+    display: block;
+    padding: 8px;
+    position: relative;
+    transition: color .5s;
+}
+
+.nav-menu a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: .5px;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.nav-menu a:hover{
+    color: var(--main-color);
+}
+/* ******************************* */
+
+.nav-container input{
+    display: none;
+}
+
+
+
+.social{
+    /* background-color: blueviolet; */
+    padding: 10px;
+}
+
+.social ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.social li{
+    margin: 0px 10px;
+}
+
+.social label{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+
+    position: relative;
+
+    transition: transform .5s;
+}
+
+.social label::after{
+    content: '';
+    position: absolute;
+    top: 250%;
+
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    /* transition: opacity .5s; */
+}
+
+.social label::before{
+    content: '';
+    position: absolute;
+    bottom: 250%;
+
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform .5s;
+}
+
+
+.nav-container input:checked ~ .social label::after{
+    opacity: 0;
+}
+
+.nav-container input:checked ~ .social label::before{
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+
+.nav-container input:checked ~ .social label{
+    transform: rotate(45deg);
+}
+
+
+.nav-container input:checked + .nav-menu{
+    height: 279px;
+}
+
+.social i{
+    font-size: 18px;
+    color: white;
+    transition: all .5s;
+}
+
+.social i:hover{
+    color: var(--main-color);
+}
+
+#about-sec{
+    padding: var(--sections-padding-values);
+    /* background-color: gray; */
+    margin: auto;
+}
+
+.about-container{
+    /* background-color: aqua; */
+}
+
+.sec-tittle h2{
+    /* background-color: red; */
+    text-align: center;
+    font-family: var(--main-font-family);
+    font-size: var(--tittle-font-size);
+    color: var(--tittle-font-color);
+    
+    position: relative;
+}
+
+.sec-tittle h2::after{
+    content: 'Know Me More';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translateY(-50%) translateX(-50%);
+
+    color: var(--font-black-color);
+    font-size: var(--sub-tittle-font-size);
+    
+}
+
+.sec-tittle h2::before{
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 70px;
+    height: 2px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+
+.about-profile{
+    /* background-color: orange; */
+    text-align: center;
+    /* width: 90%; */
+    margin: auto;
+    margin-top: 50px;
+    font-family: var(--main-font-family);
+    font-size: var(--home-content-font-size);
+    font-weight: 200;
+}
+
+.about-profile span{
+    color: var(--main-color);
+}
+
+.about-profile p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+    color: var(--font-color);
+}
+
+.about-me-info{
+    /* background-color: blueviolet; */
+    margin-top: 50px;
+    font-family: var(--main-font-family);
+    color: var(--font-color);
+}
+
+.about-me-info h4{
+    padding: 10px 5px;
+    position: relative;
+}
+
+.about-me-info h4:not(:last-child)::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: .5px;
+    background-color: #EAEAEA;
+
+}
+
+
+.about-me-info span{
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.about-me-info .email{
+    color: var(--main-color);
+}
+
+
+.about-me-info button{
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 0;
+    background-color: var(--main-color);
+    font-size: 16px;
+    transition: background-color .5s;
+}
+
+.about-me-info a{
+    text-decoration: none;
+    color: var(--font-wihte-color);
+}
+
+.about-me-info button:hover{
+    background-color: #1BAA80;
+}
+
+
+.my-counts{
+    /* background-color: black; */
+    margin: 30px auto 0px;
+    width: 80%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
+
+.count-part{
+    text-align: center;
+    padding: 30px 15px;
+    width: 50%;
+    font-family: var(--main-font-family);
+    font-weight: 300;
+    color: var(--font-color);
+    /* border-left: 1px dotted #e0dede;
+    border-bottom: 1px dotted #e0dede; */
+    
+}
+
+.count-part h4{
+    font-size: var(--sub-tittle-font-size);
+}
+
+.serevices-wrapper{
+    background-color: var(--sec-bg-color-light);
+}
+
+#services-sec{
+    
+    padding: var(--sections-padding-values) ;
+    margin: auto;
+}
+
+.sec-tittle{
+    /* background-color: red; */
+}
+
+#services-sec .sec-tittle h2::after{
+    content: 'What I Do?';
+}
+
+.services-container{
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-type{
+    /* background-color: blueviolet; */
+    margin: 20px 0px;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.services-icon{
+    font-size: xx-large;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--main-color);
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+} 
+
+.service-details{
+    margin-left: 20px;
+}
+
+.service-details h3{
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.service-details p{
+    margin-top: 10px;
+    color: var(--font-color);
+    font-size: 18px;
+}
+
+
+
+
+
+

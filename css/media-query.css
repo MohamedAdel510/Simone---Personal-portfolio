@@ -1,0 +1,176 @@
+
+@media screen and (max-width: 576px) {
+
+}
+
+
+@media screen and (min-width: 576px) {
+    /******** Home sec ********/
+    .home-content h2{
+        font-size: calc(var(--home-content-font-size) + 8px);
+    }
+
+    /********* About-sec******** */
+
+    #about-sec{
+        width: 560px;
+    }
+
+    /* ***** Services-sec******* */
+
+    #services-sec{
+        width: 560px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /******** Home sec ********/
+    .home-content h2{
+        font-size: calc(var(--home-content-font-size) + 16px);
+    }
+
+    /********* About-sec******** */
+
+    #about-sec{
+        width: 754px;
+    }
+
+    .count-part{
+        width: 25%;
+    }
+
+    /* ***** Services-sec******* */
+
+    #services-sec{
+        width: 754px;
+    }
+
+    .service-type{
+        --space-value: 20px;
+        width: calc(50% - var(--space-value));
+        margin-left: var(--space-value);
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /******** Home sec ********/
+    .home-content h2{
+        font-size: calc(var(--home-content-font-size) + 24px);
+    }
+
+    .social label{
+        /* background-color: orange; */
+        display: none;
+    }
+
+    .nav-menu{
+        width: 60%;
+        height: auto;
+        position: static;
+        background-color: transparent;
+    }
+
+    .nav-container input:checked + .nav-menu{
+        height: auto;
+    }
+
+    .nav-menu ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-menu a{
+        text-decoration: none;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        color: white;
+        display: inline;
+        padding: 0px;
+        position: static;
+        
+    }
+    
+
+    .nav-menu a::before{
+        display: none;
+    }
+
+    /********* About-sec******** */
+
+    #about-sec{
+        width: 978px;
+    }
+
+    .about-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .about-profile{
+        --space-value: 15px;
+        width: calc(60% - calc(var(--space-value) * 2));
+        margin-left: var(--space-value);
+        margin-right: var(--space-value);
+    }
+
+    .about-me-info{
+        --space-value: 15px;
+        width: calc(40% - calc(var(--space-value) * 2));
+        margin-left: var(--space-value);
+        margin-right: var(--space-value);
+    }
+
+    /* ***** Services-sec******* */
+
+    #services-sec{
+        width: 978px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+   
+    /******** Home sec ********/
+    .home-content h2{
+        font-size: calc(var(--home-content-font-size) + 32px);
+    }   
+    
+    .nav-menu{
+        width: 50%;
+    }
+
+     /********* About-sec******** */
+
+     #about-sec{
+        width: 1186px;
+     }
+
+     .about-profile{
+        text-align: left;
+        
+    }
+
+    /* ***** Services-sec******* */
+
+    #services-sec{
+        width: 1186px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+     /******** Home sec ********/
+    /********* About-sec******** */
+
+    #about-sec{
+        width:  85%;
+    }
+
+    #services-sec{
+        width: 85%;
+    }
+}
