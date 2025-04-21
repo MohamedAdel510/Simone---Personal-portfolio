@@ -81,6 +81,10 @@
     .album-photo{
         margin: 0px;
     }
+    /********* Contact******* */
+    .contact-container{
+        width: 560px;
+    }
 
 }
 
@@ -129,6 +133,27 @@
     /******** portfolio******** */
     .portfolio-content{
         width: 754px;
+    }
+
+    /********* Contact******* */
+    .contact-container{
+        width: 754px;
+    }
+
+    .contact-content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .address{
+        order: -1;
+        width: 20%;
+        text-align: left;
+        margin: 0;
+    }
+    .contact-content form{
+        width: 70%;
     }
 
 
@@ -237,6 +262,18 @@
             ".  p7 ."
         ;
     }
+
+    /********* Contact******* */
+    .contact-container{
+        width: 978px;
+    }
+
+    /* Footer */
+
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -276,6 +313,10 @@
         width: 1186px;
     }
 
+    /********* Contact******* */
+    .contact-container{
+        width: 1186px;
+    }
 
 }
 
@@ -300,6 +341,11 @@
     .portfolio-content{
         width: 85%;
     }
+
+    /********* Contact******* */
+    .contact-container{
+        width: 85%;
+    }    
 }
 
 
