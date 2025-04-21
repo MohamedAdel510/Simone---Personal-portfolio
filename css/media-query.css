@@ -21,6 +21,67 @@
     #services-sec{
         width: 560px;
     }
+
+    /******* Resume ***********/
+    #resume-sec{
+        width: 560px;
+    }
+
+    /******** portfolio******** */
+    .portfolio-content{
+        width: 560px;
+    }
+
+    .portfolio-album{
+        display: grid;
+
+        grid-template-areas: 
+            "p1 p2"
+            "p1 p2"
+            "p1 p2"
+            "p3 p2"
+            "p3 p2"
+            "p3 p2"
+            "p4 p2"
+            "p4 p5"
+            "p4 p5"
+            "p4 p5"
+            "p4 p6"
+            "p4 p6"
+            "p7 p6"
+            "p7 p6"
+            "p7 ."
+            "p7 ."
+        ;
+
+        gap: 15px;
+    }
+
+    .album-photo:nth-child(1){
+        grid-area: p1;
+    }
+    .album-photo:nth-child(2){
+        grid-area: p2;
+    }
+    .album-photo:nth-child(3){
+        grid-area: p3;
+    }
+    .album-photo:nth-child(4){
+        grid-area: p4;
+    }
+    .album-photo:nth-child(5){
+        grid-area: p5;
+    }
+    .album-photo:nth-child(6){
+        grid-area: p6;
+    }
+    .album-photo:nth-child(7){
+        grid-area: p7;
+    }
+    .album-photo{
+        margin: 0px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -50,6 +111,27 @@
         width: calc(50% - var(--space-value));
         margin-left: var(--space-value);
     }
+
+
+    /******* Resume ***********/
+    #resume-sec{
+        width: 754px;
+    }
+
+    .education{
+        width: 50%;
+    }
+
+    .skill{
+        width: 50%;
+    }
+
+    /******** portfolio******** */
+    .portfolio-content{
+        width: 754px;
+    }
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -128,8 +210,33 @@
         width: 978px;
     }
 
+    /******* Resume ***********/
+    #resume-sec{
+        width: 978px;
+    }
 
+    /******** portfolio******** */
+    .portfolio-content{
+        width: 978px;
+    }
 
+    .portfolio-album{
+        display: grid;
+
+        grid-template-areas: 
+            "p1 p2 p3"
+            "p1 p2 p3"
+            "p1 p2 p3"
+            "p4 p2 p5"
+            "p4 p2 p5"
+            "p4 p2 p5"
+            "p4 p2 p6"
+            "p4 p7 p6"
+            "p4 p7 p6"
+            ".  p7 p6"
+            ".  p7 ."
+        ;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -159,6 +266,17 @@
     #services-sec{
         width: 1186px;
     }
+
+    /******* Resume ***********/
+    #resume-sec{
+        width: 1186px;
+    }
+    /******** portfolio******** */
+    .portfolio-content{
+        width: 1186px;
+    }
+
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -173,4 +291,15 @@
     #services-sec{
         width: 85%;
     }
+
+    /******* Resume ***********/
+    #resume-sec{
+        width: 85%;
+    }
+    /******** portfolio******** */
+    .portfolio-content{
+        width: 85%;
+    }
 }
+
+
